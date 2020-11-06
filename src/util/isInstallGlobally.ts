@@ -1,4 +1,11 @@
-const fs = require('fs');
-const globalDirs = require('global-dirs');
-const isPathInside = require('is-path-inside');
+import fs from 'fs';
+import globalDirs from 'global-dirs';
+import isPathInside from 'is-path-inside';
 
+const isInstallGloabally = () : Boolean => {
+    return (isPathInside(__dirname, globalDirs.yarn.packages) ||
+        isPathInside(__dirname, fs.realpathSync(globalDirs.npm.packages))
+    );
+}
+
+module.exports.isInstallGloabally = isInstallGloabally();

@@ -7,7 +7,10 @@
   "version": "0.0.1",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch"
+  },
   "license": "MIT",
   "dependencies": {
     "chalk": "^4.1.0",
@@ -16,6 +19,8 @@
     "update-notifier": "^5.0.1"
   },
   "devDependencies": {
-    "@types/node": "^14.14.6"
+    "@types/node": "^14.14.6",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.5"
   }
 }
