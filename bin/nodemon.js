@@ -1,8 +1,12 @@
 #!/usr/bin/env node
+const parseArgv = require('../dist/util/parseArgv');
 const updateNotifier = require('update-notifier');
 const chalk = require('chalk');
 const pkg = require('../package.json');
 const { isInstallGloabally } = require('../dist/util/isInstallGlobally');
+
+const options = parseArgv(1);
+console.log(options);
 
 updateNotifier({
     pkg,
