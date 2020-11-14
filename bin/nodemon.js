@@ -6,7 +6,7 @@ const pkg = require('../package.json');
 const { isInstallGloabally } = require('../dist/util/isInstallGlobally');
 
 const options = parseArgvs(process.argv);
-
+console.log(options);
 updateNotifier({
     pkg,
     updateCheckInterval: 1000 * 60 * 60
