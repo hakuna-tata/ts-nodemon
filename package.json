@@ -2,7 +2,7 @@
   "name": "ts-nodemon",
   "author": "fffxue",
   "bin": {
-    "tsn": "./bin/nodemon.js"
+    "tsn": "./bin/tsn.js"
   },
   "version": "0.0.1",
   "description": "",

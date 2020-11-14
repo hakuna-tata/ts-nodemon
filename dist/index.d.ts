@@ -1,0 +1,1 @@
+export { tsNodemon } from './tsNodemon';
