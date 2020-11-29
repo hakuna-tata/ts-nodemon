@@ -3,7 +3,7 @@ const updateNotifier = require('update-notifier');
 const chalk = require('chalk');
 const pkg = require('../package.json');
 const { isInstallGloabally } = require('../dist/util/isInstallGlobally');
-const { parseArgvs } = require('../dist/util/parseArgvs');
+const { parseArgvs } = require('../dist/cli/parseArgvs');
 const { tsNodemon } = require('../dist');
 
 const options = parseArgvs(process.argv);
