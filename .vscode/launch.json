@@ -5,6 +5,10 @@
             "name": "ts-node inspect",
             "request": "launch",
             "type": "node",
+            "skipFiles": [
+                "<node_internals>/**",
+                "${workspaceRoot}/node_modules/**"
+            ],
             "program": "${workspaceRoot}/node_modules/ts-node/dist/bin.js",
             "args": [
                 "${relativeFile}"
