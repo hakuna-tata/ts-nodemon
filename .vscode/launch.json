@@ -9,11 +9,12 @@
                 "<node_internals>/**",
                 "${workspaceRoot}/node_modules/**"
             ],
-            "program": "${workspaceRoot}/node_modules/ts-node/dist/bin.js",
-            "args": [
-                "${relativeFile}"
+            "cwd": "${workspaceRoot}",
+            "program": "${file}",
+            "runtimeArgs": [
+               "-r", "ts-node/register",
+               "-r", "tsconfig-paths/register"
             ],
-            "cwd": "${workspaceRoot}"
         }
     ]
 }
